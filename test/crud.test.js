@@ -29,7 +29,7 @@ describe("CRUD Prisma", () => {
   it("UPDATE data", async () => {
     const customer = await prismaClient.customer.update({
       data: {
-        name: "ONE",
+        name: "one",
       },
       where: {
         id: "ONE001",
@@ -37,7 +37,7 @@ describe("CRUD Prisma", () => {
     });
 
     expect(customer.id).toBe("ONE001");
-    expect(customer.name).toBe("ONE");
+    expect(customer.name).toBe("six");
     expect(customer.email).toBe("one@email.com");
     expect(customer.phone).toBe("11111111");
   });
