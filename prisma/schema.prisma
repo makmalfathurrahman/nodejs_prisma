@@ -23,3 +23,20 @@ model Customer {
 
   @@map("customers")
 }
+
+model Product {
+  id        String   @id
+  name      String
+  price     Int   
+  stock     Int   
+  category  String   
+
+  @@map("products")
+}
+
+model Category {
+  id     Int      @id @default(autoincrement())
+  name   String   @db.VarChar(100)
+
+  @@map("categories")
+}
