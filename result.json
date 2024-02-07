@@ -1,0 +1,51 @@
+[
+  {
+    "id": "0001",
+    "name": "one",
+    "email": "one@email.com",
+    "phone": "11111111",
+    "likes": [
+      {
+        "customer_id": "0001",
+        "product_id": "P0001",
+        "product": {
+          "id": "P0001",
+          "name": "Product A",
+          "price": 1000,
+          "stock": 10,
+          "category": "X1"
+        }
+      },
+      {
+        "customer_id": "0001",
+        "product_id": "P0006",
+        "product": {
+          "id": "P0006",
+          "name": "Product A",
+          "price": 1000,
+          "stock": 10,
+          "category": "X2"
+        }
+      }
+    ]
+  },
+  {
+    "id": "0002",
+    "name": "two",
+    "email": "two@email.com",
+    "phone": "22222222",
+    "likes": [
+      {
+        "customer_id": "0002",
+        "product_id": "P0006",
+        "product": {
+          "id": "P0006",
+          "name": "Product A",
+          "price": 1000,
+          "stock": 10,
+          "category": "X2"
+        }
+      }
+    ]
+  }
+]

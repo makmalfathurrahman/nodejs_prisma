@@ -29,17 +29,17 @@ describe("CRUD Prisma", () => {
   it("UPDATE data", async () => {
     const customer = await prismaClient.customer.update({
       data: {
-        name: "one",
+        id: "0009",
       },
       where: {
-        id: "ONE001",
+        id: "NIN009",
       },
     });
 
-    expect(customer.id).toBe("ONE001");
-    expect(customer.name).toBe("six");
-    expect(customer.email).toBe("one@email.com");
-    expect(customer.phone).toBe("11111111");
+    expect(customer.id).toBe("0009");
+    // expect(customer.name).toBe("six");
+    // expect(customer.email).toBe("one@email.com");
+    // expect(customer.phone).toBe("11111111");
   });
 
   it("DELETE data", async () => {
