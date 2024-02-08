@@ -2,12 +2,12 @@ import { prismaClient } from "../src/prisma-client";
 
 describe("CRUD Prisma", () => {
   it("CREATE data", async () => {
-    const customer = await prismaClient.customer.create({
+    const customer = await prismaClient.like.create({
       data: {
-        id: "TWO002",
-        name: "two",
-        email: "two@email.com",
-        phone: "22222222",
+        id: "0001",
+        name: "one",
+        email: "one@email.com",
+        phone: "1111",
       },
     });
 

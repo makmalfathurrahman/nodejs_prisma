@@ -16,6 +16,20 @@ CREATE TABLE
         CONSTRAINT customer_phone_unique UNIQUE (phone)
     );
 
+INSERT INTO
+    customers (id, name, email, phone)
+VALUES
+    ('0001', 'one', 'one@email.com', '1111'),
+    ('0002', 'two', 'two@email.com', '2222'),
+    ('0003', 'three', 'three@email.com', '3333'),
+    ('0004', 'four', 'four@email.com', '4444'),
+    ('0005', 'five', 'five@email.com', '5555'),
+    ('0006', 'six', 'six@email.com', '6666'),
+    ('0007', 'seven', 'seven@email.com', '7777'),
+    ('0008', 'eight', 'eight@email.com', '8888'),
+    ('0009', 'nine', 'nine@email.com', '9999'),
+    ('0010', 'ten', 'ten@email.com', '1010');
+
 CREATE TABLE
     products (
         id VARCHAR(100) NOT NULL,
